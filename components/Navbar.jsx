@@ -23,8 +23,7 @@ const Navbar = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ delay: 0.3 }}
-    >
+      transition={{ delay: 0.3 }}>
       <div className={styles["navbar-container"]}>
         <div className={styles.burger}>
           <div
@@ -33,8 +32,7 @@ const Navbar = () => {
                 ? `${styles.strip} ${styles["burger-strip-2"]}`
                 : `${styles.strip} ${styles["burger-strip-2"]} ${styles.active}`
             }
-            onClick={() => handleClick()}
-          >
+            onClick={() => handleClick()}>
             <div className={styles.line1}></div>
             <div className={styles.line2}></div>
             <div className={styles.line3}></div>
@@ -45,8 +43,7 @@ const Navbar = () => {
             active === true
               ? `${styles["nav-links"]} ${styles["nav-links-active"]}`
               : `${styles["nav-links"]}`
-          }
-        >
+          }>
           <ul>
             {active && (
               <Link href="/">
@@ -59,9 +56,9 @@ const Navbar = () => {
             <li onClick={() => setActive(false)}>
               <Link href="/#plants">Plants</Link>
             </li>
-            <li onClick={() => setActive(false)}>
+            {/* <li onClick={() => setActive(false)}>
               <Link href="/about">About</Link>
-            </li>
+            </li> */}
             <li onClick={() => setActive(false)}>
               <Link href="/#contact">Contact us</Link>
             </li>
@@ -69,8 +66,7 @@ const Navbar = () => {
         </nav>
         <div
           className={active ? `${styles.overlay}` : ""}
-          onClick={() => setActive(false)}
-        ></div>
+          onClick={() => setActive(false)}></div>
         <Link href="/">
           <div className={styles.logo}>
             <Logo />
@@ -80,8 +76,7 @@ const Navbar = () => {
         <button
           type="button"
           className={styles["cart-icon"]}
-          onClick={() => setShowCart(true)}
-        >
+          onClick={() => setShowCart(true)}>
           <AiOutlineShopping />
           <span className={styles["cart-item-qty"]}>{totalQuantities}</span>
         </button>

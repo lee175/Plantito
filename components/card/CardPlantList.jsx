@@ -17,7 +17,7 @@ const CardPlantList = ({
           <div className={styles["details-container"]}>
             <div className={styles["details__container"]}>
               <p>{name}</p>
-              <p>$ {price}</p>
+              <p>₹ {price}</p>
             </div>
             <div className={styles["card__summary"]}>{summary}</div>
           </div>

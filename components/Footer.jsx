@@ -14,7 +14,7 @@ const Footer = () => {
           </div>
         </Link>
 
-        <ul className={styles["social-links"]}>
+        {/* <ul className={styles["social-links"]}>
           <li>
             <a className={styles["footer-link"]} href="#">
               <BsInstagram className={styles["social-icon"]} />
@@ -30,28 +30,23 @@ const Footer = () => {
               <BsTwitter className={styles["social-icon"]} />
             </a>
           </li>
-        </ul>
+        </ul> */}
         <p className={styles.copyright}>
-          Copyright &copy; 2022 by Plantito, Inc,
+          Copyright &copy; 2024 by Plantito, Inc,
           <br /> All rights reserved.
         </p>
       </div>
       <div className={styles["address-col"]}>
         <p className={styles.heading}>Contact us</p>
         <address className={styles.contacts}>
-          <p className={styles.address}>
-            957 Roberts Dr Elgin, South Carolina(SC), 29045
-          </p>
+          <p className={styles.address}>railway road, sikar, 332001</p>
           <p>
-            <a className={styles["footer-link"]} href="tel:401-102-7063">
-              401-102-7063
+            <a className={styles["footer-link"]} href="tel:">
+              7400400200
             </a>
             <br />
-            <a
-              className={styles["footer-link"]}
-              href="mailto:plantito@gmail.com"
-            >
-              plantito@gmail.com
+            <a className={styles["footer-link"]} href="Plantito@gmail.com">
+              Plantito@gmail.com
             </a>
           </p>
         </address>
@@ -69,16 +64,16 @@ const Footer = () => {
               Sign in
             </a>
           </li>
-          <li>
+          {/* <li>
             <a className={styles["footer-link"]} href="#">
               iOs app
             </a>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <a className={styles["footer-link"]} href="#">
               Android app
             </a>
-          </li>
+          </li> */}
         </ul>
       </nav>
       <nav className={styles["nav-col"]}>
@@ -90,11 +85,11 @@ const Footer = () => {
             </a>
           </li>
 
-          <li>
+          {/* <li>
             <a className={styles["footer-link"]} href="#">
               Careers
             </a>
-          </li>
+          </li> */}
           <li>
             <a className={styles["footer-link"]} href="#">
               For business
@@ -115,11 +110,11 @@ const Footer = () => {
               Privacy and terms
             </a>
           </li>
-          <li>
+          {/* <li>
             <a className={styles["footer-link"]} href="#">
               Plantito directory
             </a>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </div>
