@@ -1,14 +1,9 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.svg$/i,
-      issuer: /\.[jt]sx?$/,
-      use: ["@svgr/webpack"],
-    });
+const path = require("path");
+
+module.exports = {
+  webpack: (config) => {
+    config.resolve.alias["@"] = path.resolve(__dirname, "./src");
+
     return config;
   },
 };
-
-module.exports = nextConfig;
